@@ -69,6 +69,7 @@ VALUES
 ,('Cat', 'Sphynx', '7', '4');
 SELECT * FROM Queries;
 
+
 # [KEY]
 # case when과 함께 group by 사용하면 매우 유용!
 # (참고) case when을 count로도 사용 가능(count(case when rating < 3 then 1 end)/count(*)) -> Easy 섹션에서 다시 다룰 예정!

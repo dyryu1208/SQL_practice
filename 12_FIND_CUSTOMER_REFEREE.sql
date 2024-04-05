@@ -56,6 +56,7 @@ VALUES
 ,('6', 'MARK', '2');
 SELECT * FROM CUSTOMER;
 
+
 -- [MYSQL1] - 모든 경우의수를 고려해야 함
 SELECT ID, NAME
 FROM CUSTOMER

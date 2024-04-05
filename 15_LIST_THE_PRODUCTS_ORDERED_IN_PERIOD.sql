@@ -26,7 +26,7 @@ product_id는 Products 테이블에 대한 외래 키입니다.
 단위는 order_date에 주문된 제품 수입니다.
 
 
-2020년 2월에 100개 이상 주문한 제품의 이름과 금액을 가져오는 SQL 쿼리를 작성하세요.
+2020년 2월에 100개 이상 주문한 제품의 이름과 총 팔린 제품 수를 가져오는 SQL 쿼리를 작성하세요.
 어떤 순서로든 결과 테이블을 반환합니다.
 
 
@@ -110,15 +110,7 @@ VALUES
 SELECT * FROM Orders;
 
 
-
 # [MYSQL1]
-SELECT PRODUCT_ID, SUM(UNIT) AS UNIT
-FROM ORDERS
-WHERE EXTRACT(YEAR_MONTH FROM ORDER_DATE) = '202002'
-GROUP BY PRODUCT_ID
-HAVING SUM(UNIT) >= 100;
-
-# [MYSQL2]
 SELECT P.PRODUCT_NAME, UNIT
 FROM PRODUCTS P INNER JOIN 
 	(SELECT PRODUCT_ID, SUM(UNIT) AS UNIT

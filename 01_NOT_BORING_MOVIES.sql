@@ -58,6 +58,9 @@ VALUES
 	,('4', 'Ice song', 'Fantacy', '8.6')
 	,('5', 'House card', 'Interesting', '9.1');
 
+SELECT * FROM CINEMA;
+
+
 SELECT * 
 FROM cinema
 WHERE MOD(ID, 2) = 1 

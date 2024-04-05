@@ -51,6 +51,8 @@ VALUES
 	,('4', 'MAX', '90000', NULL);	    
 SELECT * FROM EMPLOYEE;
 
+
+
 # [KEY]
 # [MYSQL1] self join
 # [MYSQL2] in: 바깥 table의 alias를 안쪽 table의 alias에 그대로 사용 가능
