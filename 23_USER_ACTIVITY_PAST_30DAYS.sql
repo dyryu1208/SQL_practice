@@ -70,6 +70,7 @@ VALUES
 	,('4', '3', '2019-06-25', 'END_SESSION');
 SELECT * FROM ACTIVITY;	
 
+
 # [KEY]
 # DATE_SUB 함수, DATE_ADD 함수
 # 'period of 30 days': 한 쪽은 등호 있고, 한 쪽은 등호가 없어야지 기간이 30일이 된다.-- https://extbrain.tistory.com/58

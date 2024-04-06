@@ -84,6 +84,7 @@ VALUES
 	,('6');
 SELECT * FROM MyNumbers;
 
+
 SELECT MAX(A.NUM) AS NUM
 FROM (
 		SELECT NUM

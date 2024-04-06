@@ -86,19 +86,15 @@ VALUES
 SELECT * FROM Salaries;
 
 # MYSQL에서는 FULL OUTER JOIN을 지원하지 않아, 대체 코드를 짜야함
-select a.employee_id
-from Employees a
-left outer join
-Salaries b
-on a.employee_id = b.employee_id
-where b.employee_id is null
+SELECT A.EMPLOYEE_ID
+FROM EMPLOYEES A LEFT OUTER JOIN SALARIES B
+ON A.EMPLOYEE_ID = B.EMPLOYEE_ID
+WHERE B.EMPLOYEE_ID IS NULL
 
-union
+UNION
 
-select a.employee_id
-from Salaries a
-left outer join
-Employees b
-on a.employee_id = b.employee_id
-where b.employee_id is null
-order by employee_id;
+SELECT A.EMPLOYEE_ID
+FROM SALARIES A LEFT OUTER JOIN EMPLOYEES B
+ON A.EMPLOYEE_ID = B.EMPLOYEE_ID
+WHERE B.EMPLOYEE_ID IS NULL
+ORDER BY EMPLOYEE_ID;
